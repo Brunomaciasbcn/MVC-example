@@ -30,19 +30,12 @@ class indexController{
   }
 
   public function Index(){
-			$ShowPageData = $this->model->ShowPage();
-			require_once 'entity/view/header.php';
+	$ShowPageData = $this->model->ShowPage();
+	require_once 'entity/view/header.php';
     	require_once 'entity/view/index/menu.php';
-			require_once 'entity/view/index/index.php';
+	require_once 'entity/view/index/index.php';
     	require_once 'entity/view/footer.php';
   }
 
-	public function admin(){
-			$ShowPageData = $this->model->ShowPage();
-			require_once 'entity/view/header.php';
-			require_once 'entity/view/index/menu.php';
-			require_once 'entity/view/index/admin.php';
-			require_once 'entity/view/footer.php';
-	}
 
 }
